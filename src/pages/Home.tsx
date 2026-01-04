@@ -36,7 +36,7 @@ const Home: React.FC = () => {
       setLatestAnime(response.data);
       
       if (page === 1) {
-        setFeaturedAnime(response.data.slice(0, 5));
+        setFeaturedAnime(response.data.slice(0, 4));
       }
     } catch (error) {
       console.error('Error fetching latest anime:', error);
@@ -110,7 +110,7 @@ const Home: React.FC = () => {
             </div>
           ) : (
             <>
-              <div className="grid grid-cols-2 md:grid-cols-e lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
                 {latestAnime.map((anime, index) => (
                   <AnimeCard key={`${anime.id}-${index}`} anime={anime} index={index} />
                 ))}

@@ -121,7 +121,7 @@ const Search: React.FC = () => {
               </div>
             ) : animeList.length > 0 ? (
               <>
-                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
                   {animeList.map((anime, index) => (
                     <AnimeCard key={anime.id} anime={anime} index={index} />
                   ))}

@@ -88,7 +88,7 @@ const Home: React.FC = () => {
                 Lihat Semua →
               </Link>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {featuredAnime.map((anime, index) => (
                 <AnimeCard key={anime.id} anime={anime} index={index} />
               ))}
@@ -110,7 +110,7 @@ const Home: React.FC = () => {
             </div>
           ) : (
             <>
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-e lg:grid-cols-3 gap-6">
                 {latestAnime.map((anime, index) => (
                   <AnimeCard key={`${anime.id}-${index}`} anime={anime} index={index} />
                 ))}

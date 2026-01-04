@@ -81,7 +81,7 @@ const Latest: React.FC = () => {
         </div>
 
         {/* Anime Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
           {latestAnime.map((anime, index) => (
             <AnimeCard key={`${anime.id}-${index}`} anime={anime} index={index} />
           ))}
